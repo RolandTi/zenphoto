@@ -242,7 +242,9 @@ function printRelatedItems($number = 5, $type = 'news', $specific = NULL, $excer
 					</h4>
 					<?php
 					if ($excerpt) {
+						echo '<div>';
 						echo shortenContent($text, $excerpt, '...', true);
+						echo '</div'>;
 					}
 					?>
 				</li>
